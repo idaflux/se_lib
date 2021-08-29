@@ -4,7 +4,7 @@ namespace se_boot {
     class Program {
 
         static void Main(string[] args) {
-            string processName = "notepad";
+            string processName = "SpaceEngineers";
             int processId;
             while (true) {
                 var processes = System.Diagnostics.Process.GetProcessesByName(processName);
