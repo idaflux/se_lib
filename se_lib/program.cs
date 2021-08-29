@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace se_lib {
     public class Program {
-        public static void Main() {
+        public static int Main(string arg) {
 
             var thworker = new System.Threading.Thread(RunSTA) {
                 IsBackground = true,
@@ -14,6 +14,8 @@ namespace se_lib {
             };
 
             thworker.Start();
+
+            return 0;
         }
 
         private static void RunSTA() {
